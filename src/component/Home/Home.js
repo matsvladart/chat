@@ -60,7 +60,7 @@ const Home = props => {
             })
             .then(response => {
               onSuccess(response, file);
-              console.log(response, file.name);
+              setUploadImage(file.name);
             })
             .catch(error => {});
         }}
@@ -83,7 +83,7 @@ const Home = props => {
       </Upload>
       {uploadImg ? (
         <img
-          src={uploadImg}
+          src={`http://localhost:3000/${uploadImg}`}
           alt="avatar"
           style={{ width: 100, height: 100, objectFit: "cover" }}
         />
