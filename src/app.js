@@ -5,7 +5,7 @@ import { Provider } from "react-redux";
 import { store } from "./store";
 //Router
 import routes from "./route";
-//CSS
+// CSS
 import "./style/main.scss";
 
 const App = () => {

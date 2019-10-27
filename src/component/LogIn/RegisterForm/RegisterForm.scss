@@ -1,0 +1,15 @@
+.main.register {
+  margin-top: 25px;
+  .header {
+    margin-bottom: 25px;
+  }
+  .input {
+    .input_header {
+      font-size: 18px;
+      font-weight: 600;
+    }
+    #g-recaptcha {
+      margin: 10px 0px 25px 0px;
+    }
+  }
+}
