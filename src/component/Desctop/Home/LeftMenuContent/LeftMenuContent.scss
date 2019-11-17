@@ -1,0 +1,82 @@
+@import "../../../../style/color";
+
+.leftMenuContent {
+  width: 300px;
+  height: 100%;
+  background-color: $background-active-tab;
+  .message {
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+      border-bottom: 2px solid $background;
+      padding: 15px;
+      .message_search {
+        .ant-input-prefix {
+          .anticon {
+            font-size: 20px;
+            color: $icon-tab;
+          }
+          left: 15px;
+        }
+        .ant-input {
+          border-radius: 20px;
+          background-color: $background;
+          border-color: $background;
+          color: $icon-tab;
+          padding-left: 40px;
+          &:focus {
+            border-color: $background;
+            box-shadow: none;
+          }
+          &:hover {
+            border-color: $background;
+          }
+          &::placeholder {
+            color: $icon-tab;
+          }
+        }
+      }
+      .ant-btn-primary {
+        background-color: $background;
+        border-color: $background;
+        color: $icon-tab;
+        &:hover {
+          background-color: $hover-item;
+          border-color: $hover-item;
+        }
+      }
+    }
+    .body {
+      .ant-list {
+        .ant-list-item {
+          border-bottom: none;
+          padding: 20px;
+          height: 90px;
+          color: $active-icon-tab;
+          font-size: 16px;
+          &:hover {
+            cursor: pointer;
+            background-color: $hover-item;
+          }
+          .text {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 150px;
+            margin-left: 20px;
+            .name {
+              font-size: 17px;
+            }
+            .message {
+              .ant-typography {
+                color: #68727a;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

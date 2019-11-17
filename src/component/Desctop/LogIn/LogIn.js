@@ -1,6 +1,6 @@
 import React from "react";
 //IMG
-import bg_image from "../../../static/img/log_in_back.jpg";
+import bg_image from "../../../../static/img/log_in_back.jpg";
 //Component
 import LoginForm from "./LoginForm/LoginForm";
 import RegisterForm from "./RegisterForm/RegisterForm";
@@ -15,7 +15,7 @@ const LogIn = props => {
       </div>
       <div className="login_form">
         <div className="title">Welcom to my chat</div>
-        {props.path === "login" ? <LoginForm /> : <RegisterForm />}
+        {props.match.url === "/login" ? <LoginForm /> : <RegisterForm />}
         <div className="bottom">
           © 2019 Chat. All rights reserved.
           <br />

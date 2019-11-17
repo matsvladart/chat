@@ -1,0 +1,59 @@
+@import "../../../../style/color";
+
+.LeftMenuLayout {
+  width: 100px;
+  height: 100%;
+  background-color: $background;
+  .avatar {
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .ant-badge-dot {
+      width: 10px;
+      height: 10px;
+      background: $dot-green;
+      box-shadow: 0px 0px 0px 2px $background;
+    }
+  }
+  .tabsLayout {
+    height: calc(100% - 130px - 110px);
+    .ant-tabs .ant-tabs-left-bar {
+      border-right: none;
+    }
+    .ant-tabs .ant-tabs-left-bar .ant-tabs-tab {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 25px 37px;
+      font-size: 17px;
+    }
+    .ant-tabs .ant-tabs-left-bar .ant-tabs-tab:hover {
+      .tab_btn_icon {
+        color: $active-icon-tab;
+        cursor: pointer;
+      }
+    }
+    .ant-tabs .ant-tabs-left-bar .ant-tabs-ink-bar {
+      left: 1px;
+      width: 3px;
+    }
+    .ant-tabs-nav .ant-tabs-tab-active {
+      background-color: $background-active-tab;
+      .tab_btn_icon {
+        color: $active-icon-tab;
+      }
+    }
+  }
+  .logout {
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    .signout_btn_icon:hover {
+      color: $active-icon-tab;
+      cursor: pointer;
+    }
+  }
+}

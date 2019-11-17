@@ -1,11 +1,10 @@
 import { sessionService } from "redux-react-session";
-import { navigate } from "@reach/router";
 
-export const login = user => {
+export const login = (user, history) => {
   return () => {
-    const id = user._id;
+    const id = user.id;
     sessionService.saveSession({ id });
     sessionService.saveUser(user);
-    navigate("/");
+    history.push("/");
   };
 };

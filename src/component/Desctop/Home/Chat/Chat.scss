@@ -1,0 +1,148 @@
+@import "../../../../style/color";
+
+.chatLayout {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  .header {
+    height: 70px;
+    background-color: $bgc-message;
+    border-bottom: 2px solid #e8eded;
+  }
+  .message {
+    background-color: $bgc-message;
+    flex: 1;
+    border-bottom: 2px solid #e8eded;
+    overflow-y: auto;
+    overflow-x: hidden;
+    .user_message {
+      min-height: 90px;
+      padding: 15px 50px;
+      display: flex;
+      .message_date {
+        margin-left: 10px;
+      }
+      .message_text {
+        align-self: flex-start;
+        margin-left: 10px;
+        min-width: 150px;
+        max-width: 500px;
+        min-height: 45px;
+        background-color: #fff;
+        border-radius: 0px 4px 4px 4px;
+        position: relative;
+        padding: 5px 10px;
+        font-size: 16px;
+        &:before {
+          top: 0px;
+          left: -14px;
+          content: "";
+          width: 14px;
+          height: 15px;
+          position: absolute;
+          background-color: #fff;
+        }
+        &:after {
+          content: "";
+          background-color: #f2f7f8;
+          position: absolute;
+          width: 13px;
+          height: 16px;
+          top: -1px;
+          left: -14px;
+          border-top-right-radius: 26px;
+        }
+        .ant-typography {
+          margin-bottom: 0px;
+          word-wrap: break-word;
+        }
+      }
+    }
+    .my_message {
+      min-height: 90px;
+      padding: 15px 50px;
+      display: flex;
+      justify-content: flex-end;
+      .message_date {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 10px;
+      }
+      .message_text {
+        align-self: flex-start;
+        margin-right: 10px;
+        min-width: 150px;
+        max-width: 500px;
+        min-height: 45px;
+        background-color: $dot-green;
+        border-radius: 4px 0px 4px 4px;
+        position: relative;
+        padding: 5px 10px;
+        font-size: 16px;
+        &:before {
+          top: 0px;
+          right: -13px;
+          content: "";
+          width: 13px;
+          height: 15px;
+          position: absolute;
+          background-color: $dot-green;
+        }
+        &:after {
+          content: "";
+          background-color: #f2f7f8;
+          position: absolute;
+          width: 13px;
+          height: 16px;
+          top: -1px;
+          right: -13px;
+          border-top-left-radius: 26px;
+        }
+        .ant-typography {
+          margin-bottom: 0px;
+          word-wrap: break-word;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .input_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70px;
+    width: 100%;
+    .input_field {
+      width: 60%;
+      .ant-col.ant-form-item-control-wrapper {
+        width: 100%;
+        .ant-input {
+          width: 100%;
+          border: none;
+          box-shadow: none;
+        }
+      }
+    }
+    .btn_submit {
+      height: 40px;
+      width: 40px;
+      padding: 0px;
+      border: none;
+      box-shadow: none;
+      .anticon svg {
+        fill: $dot-green;
+      }
+      &:hover {
+        .anticon svg {
+          fill: lighten($dot-green, 15%);
+        }
+      }
+    }
+  }
+  .ant-form-explain {
+    display: none !important;
+  }
+  .ant-form-inline .ant-form-item-with-help {
+    margin-bottom: 0px;
+  }
+}

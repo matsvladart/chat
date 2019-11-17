@@ -1,4 +1,8 @@
-export const SET_YEAR = "SET_YEAR";
-export const SET_YEAR_PENDING = "SET_YEAR_PENDING";
-export const SET_YEAR_FULFILLED = "SET_YEAR_FULFILLED";
-export const SET_YEAR_REJECTED = "SET_YEAR_REJECTED";
+// export const SET_YEAR = "SET_YEAR";
+// export const SET_YEAR_PENDING = "SET_YEAR_PENDING";
+// export const SET_YEAR_FULFILLED = "SET_YEAR_FULFILLED";
+// export const SET_YEAR_REJECTED = "SET_YEAR_REJECTED";
+export const SET_ACTIVE_TAB_LEFT_MENU = "SET_ACTIVE_TAB_LEFT_MENU";
+
+export const SET_MESSAGE = "SET_MESSAGE";
+export const SET_MESSAGE_DB = "SET_MESSAGE_DB";

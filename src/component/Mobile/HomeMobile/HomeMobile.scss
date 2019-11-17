@@ -1,0 +1,7 @@
+.TabBarLayout {
+  .am-tab-bar-bar {
+    &::before {
+      height: 0px !important;
+    }
+  }
+}

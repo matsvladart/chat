@@ -1,0 +1,113 @@
+.message_list {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  .new_chat_btn {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3f4953;
+    width: 100%;
+    height: 50px;
+    padding: 0px 20px 0px 10px;
+    h1 {
+      margin: 0px;
+      color: rgb(148, 148, 148);
+    }
+  }
+  .body {
+    display: flex;
+    flex-direction: column;
+    background-color: #303841;
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    .no_data {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      h1 {
+        color: rgb(148, 148, 148);
+      }
+    }
+  }
+  .list_item {
+    min-height: 90px;
+    width: 100%;
+    background-color: #363e47;
+    color: #fff;
+    border-bottom: 1px solid #303841;
+    padding: 10px 20px;
+  }
+}
+
+.new_chat_tooltip {
+  .ant-tooltip-arrow::before {
+    background-color: #49c5b6;
+  }
+  .ant-tooltip-inner {
+    background-color: #49c5b6;
+  }
+}
+.add_new_chat_modal {
+  z-index: 1100;
+  .am-modal-transparent {
+    width: 95%;
+    height: 67%;
+    .am-modal-content {
+      background-color: #3f4953;
+      height: 100%;
+      width: 100%;
+      position: relative;
+      .am-modal-body {
+        padding: 0 10px 15px 20px;
+      }
+      .close_modal_btn {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        font-size: 25px;
+        color: #49c5b6;
+      }
+      .modal_content {
+        display: flex;
+        flex-wrap: wrap;
+        max-height: 100%;
+        overflow-y: scroll;
+        padding: 0px 15px 15px 15px;
+        .item {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 100%;
+          width: 70px;
+          height: 70px;
+          border: 1px solid #49c5b6;
+          margin-bottom: 5px;
+          margin-right: 8px;
+          .ant-badge-dot {
+            width: 12px;
+            height: 12px;
+            background: #54d48b;
+            box-shadow: 0 0 0 2px #3f4953;
+          }
+        }
+      }
+    }
+  }
+}
+.am-modal-mask {
+  z-index: 1061;
+}

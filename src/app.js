@@ -4,12 +4,16 @@ import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import { store } from "./store";
 //Router
-import routes from "./route";
+import AppRouter from "./route";
 // CSS
 import "./style/main.scss";
 
 const App = () => {
-  return <Provider store={store}>{routes}</Provider>;
+  return (
+    <Provider store={store}>
+      <AppRouter />
+    </Provider>
+  );
 };
 
 ReactDOM.render(<App />, document.getElementById("root"));
